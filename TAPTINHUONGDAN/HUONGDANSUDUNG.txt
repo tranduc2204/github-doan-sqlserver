@@ -1,0 +1,83 @@
+2021010131_Trần Đức
+
+2021010258_Hồ Thạnh Phước
+
+
+Tập tin hướng dẫn
+Folder BÁo cáo chứa các fie PDF và word của đồ án
+Folder CSDL chứa FIle SQL và FILE backup dữ liệu, sơ đồ diagram
+Folder Ứng dụng chứa bài tập POWER BI
+cách hướng dẫn cài đặt SQL, POWER BI đã được trình bày chi tiết trong file word
+-- Hướng dẫn lại cài đặt POWER BI
+----
+HƯỚNG DẪN CÀI ĐẶT POWER BI:
+Bước 1: Truy cập internet theo đường link dưới đây để download phần mềm:
+          https://powerbi.microsoft.com/en-us/desktop/
+Bước 2: Màn hình hiện thị trang bạn tìm kiếm. Bấm chọn “Downlod free”. 
+ 
+Bước 3: Sau đó, bấm chọn Download. Ở đây hệ thống sẽ hiển thị ngôn ngữ mà bạn muốn chọn. 
+	 Hãy lựa chọn “English” ngôn ngữ hữu dụng nhất.
+ 
+Bước 4: Chọn phiên bản phù hợp với máy tính và bấm “Next” để thực hiện cài đặt.
+ 
+Bước 5: Mở file vừa tải về để thực hiện cài đặt và bấm “Next”.
+ 
+Bước 6: Bấm vào ô “accept the terms in the License Agreement” và chọn “Next”.
+ 
+Bước 7: Chọn đường dẫn để cài đặt “Power BI Desktop”, mặc định chương trình đã chọn đường dẫn như hình,
+	 nếu bạn muốn thay đổi, nhấn nút “Change”. Sau khi chọn nhấn nút “Next”.
+ 
+Bước 8: Nhấn nút “Install”.
+ 
+Bước 9: Chờ chương trình chạy xong.
+ 
+Bước 10: Cài đặt “Power BI Desktop” thành công. Nếu bạn muốn khởi động chương trình, giữ nguyên như hình 
+	  và nhấn nút “Finish”.
+Bước 11: Mở phần mềm.
+
+
+KẾT NỐI VỚI CSDL TỪ SQL SERVER 
+
+Bước 1: Sau khi mở Power BI lên, tại Table Home trong Power BI Desktop bạn đi tới Get Data và sẽ nhìn thấy SQL 
+	 Server, hoặc bạn có thể vào More…và tìm tới Database. Tuy nhiên, nếu như bạn đã có bản cập nhật mới 
+	 nhất cho Power BI thì ngay tại Tab Home chọn ngayb SQL Server.
+ 
+Bước 2: Sau khi chọn SQL Server, một hộp thoại SQL Server Database hiện ra như sau, và bạn sẽ đưa vào các thông 
+	 tin như Sever (Sever bạn muốn kết nối tới là gì), thông tin về Database bạn muốn kết nối tới trong Sever
+	 đó (bạn có thể bỏ qua thông số này, đây là thông số tuỳ chọn). Sau khi điền dữ liệu xong, nhấn “OK”
+ 
+ 	- Thông tin duy nhất cần để thực hiện tiếp chính là tên Server, ngoài ra, chúng ta có thể bổ sung thêm các 
+	  thông tin khác bao gồm tên Database (nếu có nhiều Database và trích xuất chỉ từ 1 cái duy nhất).
+ 	- Data Connectivity mode (chế độ kết nối data): cách thức kết nối có 2 dạng:
+		+ Import: Tải dữ liệu từ cơ sở dữ liệu về Power BI. Cách này sẽ khiến lượng dữ liệu ở Power BI trở 
+			   nên nặng vì dữ liệu được truyền tải về Power BI và lưu trữ xử lý ở đây. Điều này cũng có 
+			   nghĩa là khi chúng ta cần cập nhập dữ liệu chúng ta phải Refesh câu lệnh Query và cập 
+			   nhập dữ liệu đã tải về Power BI.
+		+ Direct Query: xem trực tiếp lên cơ sở dữ liệu. Điều này nghĩa là thay vì chúng ta tải dữ liệu về 
+				  Power BI, chúng ta sẽ nhìn vào cơ sở dữ liệu và Power BI giống như một ống kính nhìn 
+				  lên cơ sở dữ liệu vậy. Điều này cũng sẽ có ích khi cơ sở dữ liệu chúng ta cần đưa vào 
+				  phân tích là lớn hoặc đã đầy đủ các tính năng và hàm tính. Đồng thời, dữ liệu khi nhìn 
+				  bằng Direct Query luôn là dữ liệu cập nhập nhất tại cơ sở dữ liệu. Khi sử dụng Direct 
+				  Query, chúng ta không phải lo về dung lương dữ liệu nhưng sẽ có các hạn chế. 
+
+	
+Bước 3: Một hộp thoại khác xuất hiện yêu cầu mình phải chọn nội dung cần để tạo báo cáo.
+ 
+Bước 4: Bạn sẽ trông Data của mình lúc này như sau:
+	- Ấn Load để thực hiện Load (kết nối tới SQL Sevrer).
+	- Ấn Transform để thực hiện các biến đổi khác, lựa chọn này sẽ đưa bạn tới cửa sổ Power Query Editor.
+
+Bước 5: Tiếp tục chọn các mục sẽ được xuất hiện trên biểu đồ.
+
+
+CÁCH TẠO REPORT
+    Report (báo cáo) là tập hợp những thông tin được thực hiện với mục đích cụ thể nhằm thông tin chuyển tiếp 
+hoặc tường trình, kể lại các sự kiện nhất định trong một hoàn cảnh hiện hành và có thể có hoặc không những nội
+dung kiến nghị, đề xuất. Để tạo được Report ta thực hiện các bước sau đây: 
+
+Bước 1: Cần chọn dữ liệu để tạo “Report”.
+ 
+Bước 2: Chọn loại hình dạng cho bài báo cáo.
+ 
+Bước 3: Điều chỉnh hình dạng báo cáo mong muốn.
+
